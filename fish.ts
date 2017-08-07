@@ -1,12 +1,14 @@
 class Fish extends Animal {
-    constructor(age: number, gender: string, weightInLbs: number) {
+    name: string;
+    constructor(name: string, age: number, gender: string, weightInLbs: number) {
         super(age, gender, weightInLbs);
+        this.name = name;
     }
     swim(): void {
         console.log("swimming...");
     }
     //abstract method
     move(): void {
-        console.log("The fish is swimming");
+        console.log(`${this.name} is swimming`);
     }
 }

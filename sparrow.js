@@ -11,8 +11,8 @@ var __extends = (this && this.__extends) || (function () {
 })();
 var Sparrow = (function (_super) {
     __extends(Sparrow, _super);
-    function Sparrow(age, gender, weightInLbs) {
-        return _super.call(this, age, gender, weightInLbs) || this;
+    function Sparrow(name, age, gender, weightInLbs) {
+        return _super.call(this, name, age, gender, weightInLbs) || this;
     }
     Sparrow.prototype.fly = function () {
         console.log("Sparrow is flying...");

@@ -1,5 +1,5 @@
 class Chicken extends Bird {
-    constructor(age: number, gender: string, weightInLbs: number) {
-        super(age, gender, weightInLbs);
+    constructor(name:string,age: number, gender: string, weightInLbs: number) {
+        super(name,age, gender, weightInLbs);
     }
 }

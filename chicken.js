@@ -11,8 +11,8 @@ var __extends = (this && this.__extends) || (function () {
 })();
 var Chicken = (function (_super) {
     __extends(Chicken, _super);
-    function Chicken(age, gender, weightInLbs) {
-        return _super.call(this, age, gender, weightInLbs) || this;
+    function Chicken(name, age, gender, weightInLbs) {
+        return _super.call(this, name, age, gender, weightInLbs) || this;
     }
     return Chicken;
 }(Bird));

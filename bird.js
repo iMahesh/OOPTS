@@ -11,12 +11,14 @@ var __extends = (this && this.__extends) || (function () {
 })();
 var Bird = (function (_super) {
     __extends(Bird, _super);
-    function Bird(age, gender, weightInLbs) {
-        return _super.call(this, age, gender, weightInLbs) || this;
+    function Bird(name, age, gender, weightInLbs) {
+        var _this = _super.call(this, age, gender, weightInLbs) || this;
+        _this.name = name;
+        return _this;
     }
     //abstract method
     Bird.prototype.move = function () {
-        console.log("Flapping wings...");
+        console.log(this.name + " Flapping wings...");
     };
     return Bird;
 }(Animal));

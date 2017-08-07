@@ -11,15 +11,17 @@ var __extends = (this && this.__extends) || (function () {
 })();
 var Fish = (function (_super) {
     __extends(Fish, _super);
-    function Fish(age, gender, weightInLbs) {
-        return _super.call(this, age, gender, weightInLbs) || this;
+    function Fish(name, age, gender, weightInLbs) {
+        var _this = _super.call(this, age, gender, weightInLbs) || this;
+        _this.name = name;
+        return _this;
     }
     Fish.prototype.swim = function () {
         console.log("swimming...");
     };
     //abstract method
     Fish.prototype.move = function () {
-        console.log("The fish is swimming");
+        console.log(this.name + " is swimming");
     };
     return Fish;
 }(Animal));
