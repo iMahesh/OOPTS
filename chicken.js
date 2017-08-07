@@ -9,10 +9,10 @@ var __extends = (this && this.__extends) || (function () {
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
     };
 })();
-var Bird = (function (_super) {
-    __extends(Bird, _super);
-    function Bird(age, gender, weightInLbs) {
+var Chicken = (function (_super) {
+    __extends(Chicken, _super);
+    function Chicken(age, gender, weightInLbs) {
         return _super.call(this, age, gender, weightInLbs) || this;
     }
-    return Bird;
-}(Animal));
+    return Chicken;
+}(Bird));
