@@ -14,5 +14,9 @@ var Bird = (function (_super) {
     function Bird(age, gender, weightInLbs) {
         return _super.call(this, age, gender, weightInLbs) || this;
     }
+    //abstract method
+    Bird.prototype.move = function () {
+        console.log("Flapping wings...");
+    };
     return Bird;
 }(Animal));

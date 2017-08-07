@@ -17,5 +17,9 @@ var Fish = (function (_super) {
     Fish.prototype.swim = function () {
         console.log("swimming...");
     };
+    //abstract method
+    Fish.prototype.move = function () {
+        console.log("The fish is swimming");
+    };
     return Fish;
 }(Animal));

@@ -1,4 +1,4 @@
-class Animal {
+abstract class Animal {
     age:number;
     gender:string;
     weightInLbs:number;
@@ -15,4 +15,6 @@ class Animal {
     sleep():void{
         console.log("sleeping...");
     }
+
+    abstract move():void;
 }

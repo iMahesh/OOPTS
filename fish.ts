@@ -5,4 +5,8 @@ class Fish extends Animal {
     swim(): void {
         console.log("swimming...");
     }
+    //abstract method
+    move(): void {
+        console.log("The fish is swimming");
+    }
 }
