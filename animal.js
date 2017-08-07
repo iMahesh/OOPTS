@@ -1,9 +1,9 @@
 "use strict";
 var Animal = (function () {
-    function Animal(_age, _gender, _weightInLbs) {
-        this._age = _age;
-        this._gender = _gender;
-        this._weightInLbs = _weightInLbs;
+    function Animal(age, gender, weightInLbs) {
+        this.age = age;
+        this.gender = gender;
+        this.weightInLbs = weightInLbs;
     }
     Animal.prototype.eat = function () {
         console.log("eating...");

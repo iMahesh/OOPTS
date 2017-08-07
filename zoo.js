@@ -1,8 +1,12 @@
 "use strict";
 var animal1 = new Animal(12, 'M', 12);
 animal1.eat();
-var bird1 = new Bird();
+animal1.sleep();
+var bird1 = new Bird(2, "F", 5);
 bird1.fly();
-// bird1.eat();
-var fish1 = new Fish();
+bird1.eat();
+bird1.sleep();
+var fish1 = new Fish(3, "M", 2);
 fish1.swim();
+fish1.eat();
+fish1.sleep();

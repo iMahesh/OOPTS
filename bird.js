@@ -11,8 +11,8 @@ var __extends = (this && this.__extends) || (function () {
 })();
 var Bird = (function (_super) {
     __extends(Bird, _super);
-    function Bird() {
-        return _super !== null && _super.apply(this, arguments) || this;
+    function Bird(age, gender, weightInLbs) {
+        return _super.call(this, age, gender, weightInLbs) || this;
     }
     Bird.prototype.fly = function () {
         console.log("flying...");

@@ -1,7 +1,12 @@
 class Animal {
-    constructor(private _age:number,
-    private _gender:string,
-    private _weightInLbs:number){}
+    age:number;
+    gender:string;
+    weightInLbs:number;
+    constructor(age:number,gender:string,weightInLbs:number){
+        this.age=age;
+        this.gender=gender;
+        this.weightInLbs=weightInLbs;
+    }
 
     eat():void{
         console.log("eating...");
